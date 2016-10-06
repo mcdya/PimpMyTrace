@@ -1,6 +1,9 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {SidebarComponent} from './sidebar.component'
+
 @Component({
   selector: 'my-app',
-  templateUrl: './component.home.html'
+  templateUrl: 'app/component.home.html',
+  directives:[SidebarComponent]
 })
 export class AppComponent { }
