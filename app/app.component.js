@@ -15,7 +15,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>PimpMyTrace</h1>'
+            templateUrl: './component.home.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
