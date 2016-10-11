@@ -4,6 +4,6 @@ import {SidebarComponent} from './sidebar.component'
 @Component({
   selector: 'my-app',
   templateUrl: 'app/component.home.html',
-  directives:[SidebarComponent]
+  
 })
 export class AppComponent { }

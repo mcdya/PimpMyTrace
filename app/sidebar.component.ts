@@ -15,6 +15,7 @@ import { Component } from '@angular/core';
               </ul>
           </div>`
 })
+
 export class SidebarComponent {
-  shortcuts=[Dashboard,Shortcuts,Services]
+  shortcuts=[Dashboard,Shortcuts,Services];
 }
