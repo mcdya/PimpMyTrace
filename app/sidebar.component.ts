@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SidebarService} from 'sidebar.service';
 
 @Component({
   selector: 'sidebar',
@@ -13,9 +14,15 @@ import { Component } from '@angular/core';
                       <a href="#">{{Dashboard}}</a>
                   </li>
               </ul>
-          </div>`
+          </div>`,
+  providers: [SidebarService]
 })
 
 export class SidebarComponent {
-  shortcuts=[Dashboard,Shortcuts,Services];
+
+  constructor(private sidebarService: SidebarService) { }
+
+  ngOnInit() {
+    shortcuts=this.sidebarService.GetMenuTitles();
+  }
 }
